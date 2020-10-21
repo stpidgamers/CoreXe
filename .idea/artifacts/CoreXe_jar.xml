@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CoreXe:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CoreXe_jar</output-path>
+    <root id="archive" name="CoreXe.jar">
+      <element id="module-output" name="CoreXe" />
+    </root>
+  </artifact>
+</component>
