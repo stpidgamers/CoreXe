@@ -7,14 +7,19 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GmsCommand implements CommandExecutor {
+    boolean toggled;
+
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player player = (Player) commandSender;
         if (commandSender instanceof Player) {
             if (player.isOp()){
                 player.sendMessage("§eYour gamemode has been updated to §3Survival§e.");
-                player.setGameMode(GameMode.SURVIVAL);
+                if (!toggled){
+                    player.setGameMode(GameMode.SURVIVAL);
+                }else{
 
+                }
             }
 
 
