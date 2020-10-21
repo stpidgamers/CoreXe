@@ -1,0 +1,5 @@
+name: xeCore
+version: 0.0.1
+main: me.nitrogen.xecore.Main
+author: XeNitrogen, Angel
+description: Server Utilities
