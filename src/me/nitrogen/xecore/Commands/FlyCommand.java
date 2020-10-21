@@ -16,8 +16,10 @@ public class FlyCommand implements CommandExecutor {
                 player.sendMessage("§eYou've toggled your §3Fly§e.");
                 if (!isFlying){
                     player.setFlying(true);
+                    isFlying = true;
                 }else{
                     player.setFlying(false);
+                    isFlying = false;
                 }
             }
         }

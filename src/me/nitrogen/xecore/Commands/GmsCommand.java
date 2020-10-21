@@ -15,11 +15,7 @@ public class GmsCommand implements CommandExecutor {
         if (commandSender instanceof Player) {
             if (player.isOp()){
                 player.sendMessage("§eYour gamemode has been updated to §3Survival§e.");
-                if (!toggled){
-                    player.setGameMode(GameMode.SURVIVAL);
-                }else{
-
-                }
+                player.setGameMode(GameMode.SURVIVAL);
             }
 
 

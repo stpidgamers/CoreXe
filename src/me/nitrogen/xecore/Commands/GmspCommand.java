@@ -7,18 +7,21 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class GmspCommand implements CommandExecutor {
-    boolean toggled;
+    boolean toggled = false;
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player player = (Player) commandSender;
         if (commandSender instanceof Player) {
             if (player.isOp()){
+
                 player.sendMessage("§eYour gamemode has been updated to §3Spectator§e.");
                 if (!toggled){
                     player.setGameMode(GameMode.SPECTATOR);
+                    toggled = true;
                 }else{
                     player.setGameMode(GameMode.SURVIVAL);
+                    toggled = false;
                 }
 
             }

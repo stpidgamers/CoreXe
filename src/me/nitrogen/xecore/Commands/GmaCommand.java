@@ -18,8 +18,10 @@ public class GmaCommand implements CommandExecutor {
                 player.setGameMode(GameMode.ADVENTURE);
                 if (!toggled){
                     player.setGameMode(GameMode.SPECTATOR);
+                    toggled = true;
                 }else{
                     player.setGameMode(GameMode.SURVIVAL);
+                    toggled = false;
                 }
             }
 

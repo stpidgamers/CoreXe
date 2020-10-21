@@ -15,8 +15,10 @@ public class GmcCommand implements CommandExecutor {
         if (player.isOp()){
             if (!toggled){
                 player.setGameMode(GameMode.CREATIVE);
+                toggled = true;
             }else{
                 player.setGameMode(GameMode.SURVIVAL);
+                toggled = false;
             }
         }
 
