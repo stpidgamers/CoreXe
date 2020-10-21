@@ -3,3 +3,14 @@ version: 1.0.0
 main: me.nitrogen.xecore.Main
 author: XeNitrogen, Angel
 description: Server Utilities
+commands:
+  Gma:
+    usage: /gma
+  Fly:
+    usage: /fly
+  Gms:
+    usage: /gms
+  Gmc:
+    usage: /gmc
+  Gmsp:
+    usage: /gmsp
